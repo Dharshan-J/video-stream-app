@@ -14,9 +14,12 @@
   background-color: aliceblue;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> origin
+=======
+>>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
 
 .row {
   height: 100vh;
@@ -44,6 +47,7 @@
   color:white;
   border: (54, 165, 54) solid 0.6px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 .row2{
   padding-right: 20px;
@@ -54,9 +58,17 @@
 #welcome_text3{
     /* margin-right: 20px; */
     font-size: 40px;
+=======
+>>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
 }
 
+.img-fluid{
+ height: 100%;
+ width: 100%;
+ mask-border-mode:luminance;
+ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 50px ;
 
+<<<<<<< HEAD
 .img-fluid{
  height: 100%;
  width: 100%;
@@ -77,4 +89,7 @@
 =======
 }
 >>>>>>> origin
+=======
+}
+>>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
 
