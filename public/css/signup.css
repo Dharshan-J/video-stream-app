@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    
+}
+.logo{
+    margin: 10px;
+    color: rgb(195, 200, 204);
+    padding: 1rem;
+    background-color: #110430;
+    border: none;
+    
+  font-family: "Ubuntu", sans-serif;
+
+}
+
+body{
+    background-color: #4117a19f;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    
+}
+
+nav{
+    /* background-color: cadetblue; */
+    padding: 10px;
+}
+.container{
+    padding: 20px;
+    width: 330px;
+    height: 460px;
+    border-radius: 20px;
+    background: #fcfafa;
+    box-shadow: 1px 2px 2px  #cbced1, -13px -13px 20px #675e75d0; 
+    padding:20px;
+}
+.sform-con{
+    outline: none;
+    background: none;
+    font-size: 18px;
+    /* font-weight: bold; */
+    color: #555;
+    padding: 20px 10px 20px 5px;
+    margin-bottom: 20px;
+    width: 250px; 
+    border-radius: 7px;
+  }
+.sform-con:hover{
+      border-color: red;
+}
+body{
+    background-color: #110430;
+    font-family: "Ubuntu", sans-serif;
+    
+}
+
+.btn-su{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-weight: bold; 
+} 
+.btn-su:hover{
+    background-color: white;
+    border: 1px solid;
+    border-color: red;
+    color:black;
+}
+

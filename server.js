@@ -21,7 +21,16 @@ app.use(function (req, res, next) {
 
 app.get("/", (req, res) => {
   //res.send("hello");
-  res.render("login", {});
+  res.render("home.ejs", {});
+});
+app.get("/loginPage.ejs",(req,res)=>{
+  res.render("loginPage",{});
+});
+app.get("/home.ejs",(req,res)=>{
+  res.render("home.ejs",{});
+});
+app.get("/signup.ejs",(req,res)=>{
+  res.render("signup.ejs",{});
 });
 
 app.listen(4000, () => {
