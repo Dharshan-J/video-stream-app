@@ -33,6 +33,11 @@ app.get("/signup.ejs",(req,res)=>{
   res.render("signup.ejs",{});
 });
 
+app.get("/userHome.ejs",(req,res)=>{
+  res.render("userHome.ejs",{});
+});
+
+
 app.listen(4000, () => {
   console.log("server running");
 });
