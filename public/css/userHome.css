@@ -133,41 +133,4 @@ body{
 .wishlist-btn-like {
   background-image: url("../images/like.png");
 }
-.sidebar a {
-    position: absolute; 
-    left: -120px;
-    transition: 0.3s; 
-    padding:15px; 
-    width: 180px; 
-    text-decoration: none; 
-    font-size: 20px; 
-    color: white; 
-    border-radius: 0 5px 5px 0; 
-  }
-  
-  .sidebar a:hover {
-    left: 0; 
-  }
-  
- 
-  .nav-bar{
-    margin-top: 0px;
-    background-color: #555;
-
-  }
-  
-  .nav-bar2{
-    margin-top: 100px;
-    background-color: #555; 
-  }
-  
-  .nav-bar3 {
-    margin-top: 150px;
-    background-color: #555; 
-  }
-  
-  .nav-bar1{
-    margin-top: 50px;
-    background-color: #555 
-  }
 
