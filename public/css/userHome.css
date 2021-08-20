@@ -1,27 +1,98 @@
-.main-row{
-    width: 100vw;
-    height: 100vh;
-
-    align-content: space-between;
+.main-row {
+  height: 100vh;
+  width: 100vw;
+  background-color: #110430;
+  align-content: space-between;
 }
 
-.movie-poster{
-    position: relative;
-    width: 100%;
-    height: 100%;
+.movie-poster {
+  position: relative;
+  width: 100%;
+  height: 50%;
 }
 
-.carousel-item.active{
-    position: relative;
-    height: 100%;
+.carousel-item.active {
+  position: relative;
+  height: 100%;
 }
 
-.carousel-inner{
-    height: 100%;
+.carousel-item {
+  transition: 190ms;
 }
 
-.carousel.slide{
-    position: relative;
-    height:fit-content;
-    width: 100%;
+.carousel-inner {
+  height: 100%;
+  overflow: visible;
+}
+
+.carousel.slide {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  border: none;
+  background: none;
+}
+
+.section-title {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.card.col-md-4 {
+  color: whitesmoke;
+  background-color: #0b021f;
+  transition: 1ms;
+  height: 16rem;
+  overflow: hidden;
+  transition-delay: 1s;
+  transition: 0.4s ease-in;
+}
+
+.card.col-md-4:hover {
+  overflow: scroll;
+  height: 19rem;
+  background-color: #28136e;
+  transform: translateY(20px);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+  align-self: center;
+  width: 5%;
+  height: 60%;
+}
+
+.play-icon {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.movies-col {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.movie-description {
+  font-weight: 400;
+}
+
+.wishlist-btn {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.wishlist-btn-like {
+  background-image: url("../images/like.png");
 }
