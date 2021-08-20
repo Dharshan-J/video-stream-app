@@ -13,16 +13,7 @@
 .row.col{
   background-color: aliceblue;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> origin
-=======
->>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
-=======
->>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
 
 .row {
   height: 100vh;
@@ -49,23 +40,17 @@
   background-color: rgb(0, 255, 0);
   color:white;
   border: (54, 165, 54) solid 0.6px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 }
 .row2{
   padding-right: 20px;
   height: auto;
-=======
->>>>>>> origin
+
 }
 #welcome_text3{
     /* margin-right: 20px; */
     font-size: 40px;
-=======
->>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
-=======
->>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
+
 }
 
 .img-fluid{
@@ -74,15 +59,9 @@
  mask-border-mode:luminance;
  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 50px ;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.img-fluid{
- height: 100%;
- width: 100%;
- mask-border-mode:luminance;
- box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 50px ;
 
-<<<<<<< HEAD
+
+
 .img-fluid{
  height: 80%;
  width: 100%;
@@ -92,14 +71,3 @@
  box-shadow: inset 20px 20px 20px #020861;
  border-radius: 20px;
 }
-
-=======
-}
->>>>>>> origin
-=======
-}
->>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
-=======
-}
->>>>>>> d8c2a84c7b68fa50912a8d9731e6117a5f6960f3
-
