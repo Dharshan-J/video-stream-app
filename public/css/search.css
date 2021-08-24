@@ -87,10 +87,10 @@ body{
     cursor:pointer;
 }
 
-.movie-card:hover{
+.movie-about:hover{
     transform: scale3d(1.1, 1.1, 1.1);
     background-color: #28136e;
-}
+  }
 .movie-card-image{
     height: 100%;
 }

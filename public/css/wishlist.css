@@ -65,16 +65,8 @@ body{
 }
 
 
-.movie-card-disabled{
-  pointer-events: none;
-  opacity: 0.3;
-  
-}
 
-.movie-card:hover{
-  transform: scale3d(1.1, 1.1, 1.1);
-  background-color: #28136e;
-}
+
 .movie-card-image{
   height: 100%;
 }
@@ -84,6 +76,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.movie-about:hover{
+  transform: scale3d(1.1, 1.1, 1.1);
+  background-color: #28136e;
 }
 
 #movie_title{
