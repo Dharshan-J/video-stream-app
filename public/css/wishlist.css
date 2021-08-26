@@ -68,13 +68,9 @@ body{
   pointer-events: none;
 }
 
-
-
-
 .movie-card-image{
   height: 100%;
 }
-
 
 .movie-card-about{
   display: flex;
@@ -119,13 +115,12 @@ body{
 }
 
 .undo-btn{
-  position: absolute;
-  left: 210px;
-  top: 150px;
+  position: relative;
+  align-self: center;
+  display: inline-flex;
   color:white;
   background: none;
   border: none;
-  font-size: 1rem;
 }
 /* .undo1{
   display: none;

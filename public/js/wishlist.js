@@ -4,9 +4,8 @@ const movieImgDiv = document.querySelector("#movie_image");
 const movieTitleDiv= document.querySelector("#movie_title");
 const movieAboutDiv=document.querySelector("#movie_about");
 const undoBtn=document.querySelector("#undo_btn");
-undoBtn.classList.add("undo1");
-document.querySelector(".movie-about").classList.remove("disable");
-
+// undoBtn.classList.add("undo1");
+document.querySelector(".movie-about").classList.remove("d-none");
 
 
 wishlistBtnLike.addEventListener("click", () => {
@@ -15,15 +14,14 @@ wishlistBtnLike.addEventListener("click", () => {
     undoBtn.classList.remove('undo1');
     undoBtn.classList.add("undo-btn");
     movieAboutDiv.classList.remove("hover");
-    movieImgDiv.classList.toggle("disable");
-    movieAboutDiv.classList.toggle("disable");
+    movieImgDiv.classList.toggle("d-none");
+    movieTitleDiv.classList.toggle("d-none");
 })
 undoBtn.addEventListener("click", () => {
-
     wishlistBtnLove.classList.toggle("d-none");
     wishlistBtnLike.classList.toggle("d-none");  
     movieAboutDiv.classList.add("hover"); 
-    undoBtn.classList.add('undo1');
-    movieImgDiv.classList.toggle("disable");
-    movieAboutDiv.classList.toggle("disable");
+    // undoBtn.classList.add('undo1');
+    movieImgDiv.classList.toggle("d-none");
+    movieTitleDiv.classList.toggle("d-none");
 })
