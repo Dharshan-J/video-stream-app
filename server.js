@@ -24,13 +24,13 @@ app.get("/", (req, res) => {
   //res.send("hello");
   res.render("home.ejs", {});
 });
-app.get("/loginPage", (req, res) => {
-  res.render("loginPage", {});
+app.get("/loginPage.ejs", (req, res) => {
+  res.render("loginPage.ejs", {});
 });
-app.get("/home", (req, res) => {
+app.get("/home.ejs", (req, res) => {
   res.render("home.ejs", {});
 });
-app.get("/signup", (req, res) => {
+app.get("/signup.ejs", (req, res) => {
   res.render("signup.ejs", {});
 });
 
