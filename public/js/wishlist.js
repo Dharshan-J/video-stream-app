@@ -16,7 +16,7 @@ wishlistBtnLike.addEventListener("click", () => {
     undoBtn.classList.add("undo-btn");
     movieAboutDiv.classList.remove("hover");
     movieImgDiv.classList.toggle("disable");
-    movieTitleDiv.classList.toggle("disable");
+    movieAboutDiv.classList.toggle("disable");
 })
 undoBtn.addEventListener("click", () => {
 
@@ -25,5 +25,5 @@ undoBtn.addEventListener("click", () => {
     movieAboutDiv.classList.add("hover"); 
     undoBtn.classList.add('undo1');
     movieImgDiv.classList.toggle("disable");
-    movieTitleDiv.classList.toggle("disable");
+    movieAboutDiv.classList.toggle("disable");
 })

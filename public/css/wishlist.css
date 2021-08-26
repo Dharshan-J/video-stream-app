@@ -120,17 +120,16 @@ body{
 
 .undo-btn{
   position: absolute;
-  /* top:150px;
-  left:435px; */
   left: 210px;
   top: 150px;
   color:white;
   background: none;
   border: none;
+  font-size: 1rem;
 }
-.undo1{
+/* .undo1{
   display: none;
-}
+} */
 
 
 
