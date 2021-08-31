@@ -52,6 +52,10 @@ app.get("/contact",(req,res)=>{
 app.get("/profile",(req,res)=>{
   res.render("profile.ejs",{});
 })
+
+app.get("/videoPlayer",(req,res)=>{
+  res.render("videoPlayer.ejs",{});
+})
 app.listen(5000, () => {
   console.log("server running");
 });

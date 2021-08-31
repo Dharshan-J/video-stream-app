@@ -2,7 +2,7 @@ var axios = require("axios").default;
 
 var options = {
   method: 'GET',
-  url: 'https://imdb8.p.rapidapi.com/chart/popular/genre/action/',
+  url: 'https://imdb8.p.rapidapi.com/title/find',
   params: {q: 'game of thr'},
   headers: {
     'x-rapidapi-host': 'imdb8.p.rapidapi.com',

@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <script defer src="../public/js/videoPlayer.js"></script>
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="videoPlayer.css">
+  </head>
+  <body>
+    <video
+      id="my-video"
+      class="video-js player-wrapper vjs-big-play-centered" 
+    >
+      <source
+        src="../public/videos/big_buck_bunny_720p_1mb.mp4"
+        type="video/mp4"
+      />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video>
+
+    <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+  </body>
+</html> -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.10.2/alt/video-js-cdn.css" rel="stylesheet">
+<script src="../public/js/videoPlayer.js"></script>
+<script src="../public/js/videoPlayer.js"></script>
+
+<input type="text" id="url" style="width:100%" value="https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"> <input type="button" id="btn" value="play">
+
+<br><br>
+
+<video id="video" class="video-js vjs-default-skin" preload="none" crossorigin="true" controls width="640" height="268" controls>
+</video>
+<script src="videojs-http-streaming.js"></script>
+<script>
