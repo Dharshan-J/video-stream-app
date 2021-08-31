@@ -3,6 +3,9 @@
   color: rgb(195, 200, 204);
   font-family: "Ubuntu", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 0px;
+}
 
 #welcome_text {
   font-size: 40px;
@@ -47,6 +50,26 @@
   font-size: 40px;
 }
 
+
+.img-fluid{
+ height: 100%;
+ width: 100%;
+ mask-border-mode:luminance;
+ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 50px ;
+}
+
+
+
+
+.img-fluid{
+ height: 80%;
+ width: 100%;
+ mask-border-mode:luminance;
+ border: solid rgba(#000, 2);
+ box-shadow: 0px 22px 70px 50px #110430 ;
+ box-shadow: inset 20px 20px 20px #020861;
+ border-radius: 20px;
+}
 .img-fluid {
   height: 100%;
   width: 100%;

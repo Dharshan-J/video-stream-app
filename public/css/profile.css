@@ -1,0 +1,163 @@
+body {
+    background-color: #110430;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+.main-row {
+    height: 100vh;
+    width: 100vw;
+    background-color: #110430;
+    align-content: space-between;
+}
+  
+::-webkit-scrollbar {
+    width: 0px;
+}
+.profile-col {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}  
+.profile-card{
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-top: 40px;
+    width:1024px;
+    height: 600px
+}
+  
+.card-header{
+    background: #28136e;
+    padding: 15px;
+    width: 700px;
+    /* width: max-content */
+    height: 100px
+}
+  
+  #profile_pic{
+    margin: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0.2rem solid black;
+  }
+  
+  #name{
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight:bold;
+    margin: 10px ;
+    align-self: center;
+    margin-left: 1rem;
+  }
+.card-info{
+    width: 700px;
+    margin-top: 20px;
+
+    background: #28136e;
+    padding: 15px;
+    height: 250px
+}
+.card-info span{
+    color: rgb(138, 131, 131);
+    font-size: small;
+    /* float:left; */
+}
+.card-info p{
+    color: whitesmoke;
+    font-size:1.2rem; 
+
+    /* float:left; */
+}
+ #name_editBtn{
+    float:right;
+    align-self: baseline;
+    margin-left:30rem; 
+    color: black;
+    /* color: whitesmoke; */
+    background-color: white;
+    border: none;
+    width: 5rem;
+    border-radius: 0.2rem;  
+}
+#name_editBtn:hover{
+    background: black;
+    color: white;
+}
+#password_editBtn{
+    float:right;
+    align-self: baseline;
+    margin-left:31.3rem; 
+    background-color:rgb(138, 131, 131);
+    /* font-weight: bold; */
+    color: black;
+    background-color: white;
+    border: none;
+    width: 5rem;
+    border-radius: 0.2rem;  
+}
+#password_editBtn:hover{
+    background: black;
+    color: white;
+}
+#email_editBtn{
+    margin-left:20.9rem;
+    float:right;
+    align-self: baseline;
+    background-color:rgb(138, 131, 131);
+    /* font-weight: bold; */
+    color: black;
+    /* color: whitesmoke; */
+    background-color: white;
+    border: none;
+    width: 5rem;
+    border-radius: 0.2rem;  
+}
+#email_editBtn:hover{
+    background: black;
+    color: white;
+}
+.details{
+    position:relative;
+    padding-left:1rem;
+}
+#logout_Btn{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-left: 26.5rem;
+}
+#logout_Btn:hover{
+    width: 45px;
+    height: 45px;
+    cursor:pointer;
+}
+
+.card-settings{
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background: #28136e;
+    padding: 15px;
+    width: 700px;
+    height: 100px
+}
+#settings_icon{
+    margin: 0.5rem;
+    margin-left: 1rem;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+.card-settings a{
+    margin-left: 1rem;;
+    color: whitesmoke;
+    /* pointer-events: none; */
+    cursor: pointer;
+    font-size: large;
+    align-self: center;
+}
+

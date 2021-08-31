@@ -25,28 +25,17 @@ nav{
     padding: 10px;
 }
 .container{
+    margin-top: -2rem;
     padding: 20px;
-    width: 330px;
-    height: 460px;
+    padding-right: -10px;
+    width: 340px;
+    align-self: center;
+    height: max-content;
     border-radius: 20px;
     background: #fcfafa;
     box-shadow: 1px 2px 2px  #cbced1, -13px -13px 20px #675e75d0; 
-    padding:20px;
 }
-.sform-con{
-    outline: none;
-    background: none;
-    font-size: 18px;
-    /* font-weight: bold; */
-    color: #555;
-    padding: 20px 10px 20px 5px;
-    margin-bottom: 20px;
-    width: 250px; 
-    border-radius: 7px;
-  }
-.sform-con:hover{
-      border-color: red;
-}
+
 body{
     background-color: #110430;
     font-family: "Ubuntu", sans-serif;
@@ -54,11 +43,11 @@ body{
 }
 
 .btn-su{
-    margin-top: 20px;
+    margin-top: 0px;
     border: none;
     outline: none;
     height: 50px;
-    width: 250px;
+    width: 16.5rem;
     background-color: black;
     color: white;
     border-radius: 7px;
@@ -70,5 +59,27 @@ body{
     border: 1px solid;
     border-color: red;
     color:black;
+}
+.container input ~ span{
+    position: absolute;
+    left: 0.5rem;
+    border: none;
+    transition: 300ms ease-in-out;
+    margin-top: 10px;
+}
+.container input:focus ~span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.container input{
+    width: 16.5rem;
+    color: black;
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid black;
 }
 

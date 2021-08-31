@@ -78,6 +78,7 @@
 .play-icon {
   max-height: 30px;
   max-width: 30px;
+  cursor: pointer;
 }
 
 .movies-col {
@@ -135,9 +136,11 @@ body{
   position: relative;
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 .wishlist-btn-like {
   background-image: url("../images/like.png");
 }
+
 

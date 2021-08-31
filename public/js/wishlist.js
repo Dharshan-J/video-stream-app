@@ -24,4 +24,8 @@ undoDiv.addEventListener("click", () => {
     movieAboutDiv.classList.toggle("d-none");
     undoDiv.classList.toggle("d-none");
 
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> branchJD

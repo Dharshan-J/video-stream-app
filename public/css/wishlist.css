@@ -63,6 +63,7 @@ body {
   border-radius: 1%;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 .disable {
   background-color: #190c44;
@@ -72,6 +73,17 @@ body {
   width: 100%;
 }
 
+=======
+
+.disable {
+  background-color: #190c44;
+}
+
+.movie-results {
+  width: 100%;
+}
+
+>>>>>>> branchJD
 .movie-card-image {
   height: 100%;
 }
@@ -138,4 +150,8 @@ body {
   padding-top: 0.7rem;
   font-size: 1.3rem;
   align-self: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> branchJD

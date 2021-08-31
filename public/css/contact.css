@@ -1,0 +1,131 @@
+body {
+    background-color: #110430;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+  }
+  
+  .main-row {
+    height: 100vh;
+    width: 100vw;
+    background-color: #110430;
+    align-content: space-between;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .contact-col {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  
+header{
+    color: azure;
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    top: 2rem;
+}
+header h1{
+    /* font-size: 30px; */
+    color: azure;
+}
+
+
+.content{
+    display: flex;
+    color: azure;
+    min-height: 100vh;
+}
+.content section{
+    margin-top: 6vh;
+}
+.content-form{
+    margin-top: 7rem;
+}
+section i{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+    color: rgb(5, 82, 82);
+    text-align: center;
+}
+.form{
+    display: flex;
+    padding: 1rem;
+    position: absolute;
+    top: 9rem;
+    right: 3rem;
+    color: blanchedalmond;
+    background-color: #23115f;
+    margin-left: 50%;
+    justify-content: center;
+    height: 24rem;
+    border-radius: 2rem;
+}
+
+.form .contact-form input{
+    width: 30rem;
+    color: cornsilk;
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+}
+.form .contact-form input ~ span{
+    margin-left: 1rem;
+    position: absolute;
+    left: 20px;
+    border: none;
+    transition: 300ms ease-in-out;
+    margin-top: 10px;
+}
+.form .contact-form input:focus ~span{
+    margin-left: 1rem;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.form .contact-form textarea{
+    color: cornsilk;
+    width: 30rem;
+    border: 0px;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid white;
+}
+.form .contact-form textarea ~ span
+{
+    margin-left: 1rem;
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: 300ms ease-in-out;
+}
+.form .contact-form textarea:focus ~span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.contact-form button{
+    margin-left:1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    align-self: center;
+    font-size: 18px;
+    width: 10rem;
+    height: 40px;
+    margin-top: -5px;
+    border-radius: 0.5rem;
+    border-bottom: none
+}
+.contact-form button:hover{
+    background-color: black;
+    color: white;
+}
+
