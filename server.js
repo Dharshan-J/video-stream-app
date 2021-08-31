@@ -45,7 +45,13 @@ app.get("/search", (req, res) => {
 app.get("/wishlist", (req, res) => {
   res.render("wishlist.ejs", {});
 });
+app.get("/contact",(req,res)=>{
+  res.render("contact.ejs",{});
+});
 
+app.get("/profile",(req,res)=>{
+  res.render("profile.ejs",{});
+})
 app.listen(5000, () => {
   console.log("server running");
 });
