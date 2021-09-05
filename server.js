@@ -57,6 +57,12 @@ app.get("/videoPlayer",(req,res)=>{
   res.render("videoPlayer.ejs",{});
 })
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+app.get("/moviePage",(req,res)=>{
+  res.render("moviePage.ejs",{})
+})
+>>>>>>> branchJD
 =======
 app.get("/moviePage",(req,res)=>{
   res.render("moviePage.ejs",{})

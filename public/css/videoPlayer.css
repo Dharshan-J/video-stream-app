@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 0px;
 }
 .my-video-js-custom {
@@ -29,6 +30,8 @@
 
 
 =======
+=======
+>>>>>>> branchJD
     width: 0px;
   }
   .my-video-js-custom {
@@ -54,5 +57,9 @@
   .video-js .vjs-play-control .vjs-icon-placeholder:before,
   .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
     content: "\f101";
+<<<<<<< HEAD
+  }
+>>>>>>> branchJD
+=======
   }
 >>>>>>> branchJD

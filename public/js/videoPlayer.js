@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> branchJD
 
 $(document).ready(function() {
   $("#btn").on("click", function() {
@@ -8,6 +11,9 @@ $(document).ready(function() {
     ply.play();
   });
 });
+<<<<<<< HEAD
+>>>>>>> branchJD
+=======
 >>>>>>> branchJD
 const player = videojs("my-video", {
   controls: true,
@@ -35,6 +41,9 @@ player.src({
 })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> branchJD
 =======
 >>>>>>> branchJD
