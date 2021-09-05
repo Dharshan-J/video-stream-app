@@ -18,7 +18,7 @@ signupForm.addEventListener("submit", async (event) => {
     console.log(res);
 
     if (res.status == 200) {
-      //window.location.replace("http://localhost:5000/userHome");
+      window.location.replace("http://localhost:5000/userHome");
     }
   } catch (error) {
     console.log(error);

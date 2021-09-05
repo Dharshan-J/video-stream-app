@@ -3,6 +3,7 @@ const ejs = require("ejs");
 const https = require("https");
 const path = require("path");
 const signupRouter = require("./routes/signup-route");
+const loginRouter = require("./routes/login-route");
 
 
 const app = express();
@@ -22,14 +23,13 @@ app.use(function (req, res, next) {
 });
 
 app.use("/signup", signupRouter);
+app.use('/login',loginRouter)
 
 
 app.get("/", (req, res) => {
   res.render("home.ejs", {});
 });
-app.get("/loginPage", (req, res) => {
-  res.render("loginPage.ejs", {});
-});
+
 app.get("/home", (req, res) => {
   res.render("home.ejs", {});
 });
