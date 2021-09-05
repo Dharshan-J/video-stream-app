@@ -91,7 +91,7 @@ body {
 #password_editBtn{
     float:right;
     align-self: baseline;
-    margin-left:31.3rem; 
+    margin-left:30rem; 
     background-color:rgb(138, 131, 131);
     /* font-weight: bold; */
     color: black;
@@ -105,7 +105,7 @@ body {
     color: white;
 }
 #email_editBtn{
-    margin-left:20.9rem;
+    margin-left:21.1rem;
     float:right;
     align-self: baseline;
     background-color:rgb(138, 131, 131);

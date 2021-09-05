@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+
+$(document).ready(function() {
+  $("#btn").on("click", function() {
+    $("#video").html("<source src='"+ $("#url").val() +"' type='application/x-mpegURL'>");
+    var ply = videojs("video");
+    ply.play();
+  });
+});
+>>>>>>> branchJD
 const player = videojs("my-video", {
   controls: true,
   autoplay: false,
@@ -23,4 +34,7 @@ player.src({
    
 })
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> branchJD
