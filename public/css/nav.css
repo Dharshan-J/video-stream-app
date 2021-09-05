@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  font-family: "Ubuntu", sans-serif;
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;

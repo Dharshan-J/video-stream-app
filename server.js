@@ -56,6 +56,9 @@ app.get("/profile",(req,res)=>{
 app.get("/videoPlayer",(req,res)=>{
   res.render("videoPlayer.ejs",{});
 })
+app.get("/moviePage",(req,res)=>{
+  res.render("moviePage.ejs",{})
+})
 app.listen(5000, () => {
   console.log("server running");
 });

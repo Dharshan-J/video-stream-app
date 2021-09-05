@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-// const player = videojs("my-video", {
-//   controls: true,
-//   autoplay: false,
-//   preload: "auto",
-//   fluid: true,
-//   preferFullWindow: true,
-//   sources: [
-//     {
-//       src: "../public/videos/big_buck_bunny_720p_1mb.mp4",
-//       type: "video/mp4",
-//     },
-//   ],
-// });
-
 
 $(document).ready(function() {
   $("#btn").on("click", function() {
@@ -21,7 +6,6 @@ $(document).ready(function() {
     ply.play();
   });
 });
-=======
 const player = videojs("my-video", {
   controls: true,
   autoplay: false,
@@ -47,5 +31,3 @@ player.src({
    
 })
 
-
->>>>>>> b9c6118ea901478004ed258928c4f181dfa420cd

@@ -1,0 +1,106 @@
+
+.main-container {
+    background-image: url("../images/Skyfall.jpg");
+    height: 100vh; 
+    width: 100vw;
+    /* background-repeat: no-repeat; */
+  /* background-size: auto */
+    background-size: cover; 
+    opacity: 0.89;
+    margin: 0px;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+body{
+  margin: 0px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+.main-container >div{
+  height: fit-content;
+
+}
+.movie-content{
+  width: 40rem;
+  padding: 2rem;
+  background: transparent;
+  /* margin-top: 10rem; */
+}
+.gen-time{
+  margin-top: 5rem;
+  font-size: 1rem;
+}
+.name-div{
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.movieAbout-div{
+  font-size: 1.3rem;
+}
+.watch-btn-div button{
+  margin-top: 2rem;
+  background: transparent;
+  border-color: whitesmoke;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding-left: 1.5rem;
+  padding-right:1.5rem ;
+  padding-top: 0.3rem;
+  padding-bottom: 0.6rem;
+  color: white;
+  text-align: center;
+}
+.play-img{
+  margin-left: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.genre-img{
+  width: 1rem;
+  height: 1rem;
+}
+.time-img{
+  margin-left: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+.watch-btn-div button:hover{
+  
+  box-shadow:0px 5px 3px rgb(167, 152, 152);
+}
+.cast-row
+{
+  margin: 2rem;
+  margin-top: 7rem;
+}
+.row-cast-details
+{
+  width: 40rem;
+}
+.row span{
+  margin-top: -5rem;
+  font-size: 1.2rem;
+}
+.rating-col{
+  margin-left: 20rem;
+  
+}
+p.span-rating{
+  margin-top: -3rem;
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: -8px;
+}
+p.rating-num{
+  font-size:3.2rem;
+}
+.row-cast-details p{
+  margin-bottom: -8px;
+}
+.second-col-div{
+  margin-top: -3rem;
+}
+
