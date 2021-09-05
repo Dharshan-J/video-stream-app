@@ -1,4 +1,40 @@
 ::-webkit-scrollbar {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  width: 0px;
+}
+.my-video-js-custom {
+  height: 100vh;
+  width: 100%;
+}
+
+.my-video-js-custom .vjs-control-bar {
+  background: #110430;
+  height: 7%;
+  opacity: 0.8;
+}
+
+.my-video-js-custom .vjs-big-play-button {
+  top: 50%;
+  left: 50%;
+  border: none;
+  height: 0;
+  width: 0;
+}
+
+.my-video-js-custom .vjs-icon-play:before,
+.video-js .vjs-play-control .vjs-icon-placeholder:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: "\f101";
+}
+
+
+=======
+=======
+>>>>>>> branchJD
+>>>>>>> bd8cbf07e84b16ac22d166697af436f82c847220
     width: 0px;
   }
   .my-video-js-custom {
@@ -24,4 +60,13 @@
   .video-js .vjs-play-control .vjs-icon-placeholder:before,
   .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
     content: "\f101";
+<<<<<<< HEAD
   }
+=======
+<<<<<<< HEAD
+  }
+>>>>>>> branchJD
+=======
+  }
+>>>>>>> branchJD
+>>>>>>> bd8cbf07e84b16ac22d166697af436f82c847220
