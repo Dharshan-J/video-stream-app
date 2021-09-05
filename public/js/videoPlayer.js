@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> branchJD
 =======
 >>>>>>> branchJD
 
@@ -12,6 +15,9 @@ $(document).ready(function() {
   });
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> branchJD
+=======
 >>>>>>> branchJD
 =======
 >>>>>>> branchJD
@@ -42,7 +48,10 @@ player.src({
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> branchJD
 =======
 >>>>>>> branchJD
 =======
