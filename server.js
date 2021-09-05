@@ -2,6 +2,7 @@ const express = require("express");
 const ejs = require("ejs");
 const https = require("https");
 const path = require("path");
+const signupRouter = require("./routes/signup-route");
 
 
 const app = express();
@@ -20,19 +21,19 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.use("/signup", signupRouter);
+
+
 app.get("/", (req, res) => {
-  //res.send("hello");
   res.render("home.ejs", {});
 });
-app.get("/loginPage.ejs", (req, res) => {
+app.get("/loginPage", (req, res) => {
   res.render("loginPage.ejs", {});
 });
-app.get("/home.ejs", (req, res) => {
+app.get("/home", (req, res) => {
   res.render("home.ejs", {});
 });
-app.get("/signup.ejs", (req, res) => {
-  res.render("signup.ejs", {});
-});
+
 
 app.get("/userHome", (req, res) => {
   res.render("userHome.ejs", {});
@@ -56,6 +57,11 @@ app.get("/profile",(req,res)=>{
 app.get("/videoPlayer",(req,res)=>{
   res.render("videoPlayer.ejs",{});
 })
+
+app.get("/moviePage",(req,res)=>{
+  res.render("moviePage.ejs",{})
+})
+
 app.listen(5000, () => {
   console.log("server running");
 });
