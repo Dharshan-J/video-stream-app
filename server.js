@@ -56,24 +56,19 @@ app.get("/profile",(req,res)=>{
 app.get("/videoPlayer",(req,res)=>{
   res.render("videoPlayer.ejs",{});
 })
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 app.get("/moviePage",(req,res)=>{
   res.render("moviePage.ejs",{})
 })
->>>>>>> branchJD
-=======
+
 app.get("/moviePage",(req,res)=>{
   res.render("moviePage.ejs",{})
 })
->>>>>>> branchJD
-=======
+
 app.get("/moviePage",(req,res)=>{
   res.render("moviePage.ejs",{})
 })
->>>>>>> branchJD
+
 app.listen(5000, () => {
   console.log("server running");
 });
