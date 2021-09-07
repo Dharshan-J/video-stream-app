@@ -93,6 +93,68 @@ async function getCast(movieId) {
     return cast;
       
 }
+async function getRating(movieId){
+    let options = {
+        method: 'GET',
+        url: 'https://imdb8.p.rapidapi.com/title/get-ratings',
+        params: {tconst: movieId},
+        headers: {
+          'x-rapidapi-host': 'imdb8.p.rapidapi.com',
+          'x-rapidapi-key': '5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d'
+        }
+    };
+    let ratings = "";
+    try {
+        let res = await axios.request(options);
+        ratings=res.rating;
+
+    } catch (error) {
+        console.log(error);
+    }
+    return ratings;
+}
+async function getMetaCritic(movieId){
+    let options = {
+        method: 'GET',
+        url: 'https://imdb8.p.rapidapi.com/title/get-metacritic',
+        params: {tconst: movieId},
+        headers: {
+          'x-rapidapi-host': 'imdb8.p.rapidapi.com',
+          'x-rapidapi-key': '5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d'
+        }
+      };
+    let metaCritic = "";
+    try {
+        let res = await axios.request(options);
+        metaCritic=res
+        
+    } catch (error) {
+        console.log(error);
+    }
+    return metaCritic;
+}
+
+async function getVideoUrl(movieId){
+    let options = {
+        method: 'GET',
+        url: 'https://imdb8.p.rapidapi.com/title/get-videos',
+        params: {tconst: movieId},
+        headers: {
+          'x-rapidapi-host': 'imdb8.p.rapidapi.com',
+          'x-rapidapi-key': '5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d'
+        }
+      };
+    let videos = "";
+    try {
+        let res = await axios.request(options);
+        videos=res
+        
+    } catch (error) {
+        console.log(error);
+    }
+    return videos;
+}
+
 
 async function getMovieDetails(movieId,genre) {
     let options = {
