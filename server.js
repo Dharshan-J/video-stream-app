@@ -4,6 +4,7 @@ const https = require("https");
 const path = require("path");
 const signupRouter = require("./routes/signup-route");
 const loginRouter = require("./routes/login-route");
+const userHomeRouter = require("./routes/userHome-route");
 
 const app = express();
 const server = https.createServer(app);
@@ -23,6 +24,7 @@ app.use(function (req, res, next) {
 
 app.use("/signup", signupRouter);
 app.use("/login", loginRouter);
+app.use("/userHome",userHomeRouter)
 
 app.get("/", (req, res) => {
   res.render("home.ejs", {});
@@ -32,9 +34,7 @@ app.get("/home", (req, res) => {
   res.render("home.ejs", {});
 });
 
-app.get("/userHome", (req, res) => {
-  res.render("userHome.ejs", {});
-});
+
 
 app.get("/search", (req, res) => {
   res.render("search.ejs", {});

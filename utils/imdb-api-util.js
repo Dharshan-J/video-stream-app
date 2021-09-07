@@ -1,6 +1,7 @@
 const axios = require("axios");
-const { response } = require("express");
 const Movie = require("../utils/movie-util");
+
+const key = "8750407883mshb1ac941a807382fp153811jsnc07cb90e5e01";
 
 async function getPopularGenres() {
   let options = {
@@ -8,13 +9,13 @@ async function getPopularGenres() {
     url: "https://imdb8.p.rapidapi.com/title/list-popular-genres",
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let genres = [];
   try {
     let res = await axios.request(options);
-    res.data.genre.forEach((genreObject) => {
+    res.data.genres.forEach((genreObject) => {
       genres.push(genreObject);
     });
   } catch (error) {
@@ -30,7 +31,7 @@ async function getMoviesByGenre(genreEndpoint) {
     params: { genre: genreEndpoint },
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let movies = [];
@@ -52,13 +53,13 @@ async function getSynopsis(movieId) {
     params: { tconst: movieId },
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let synopsis = "";
   try {
     let res = await axios.request(options);
-    synopsis = res.data.split(".")[0];
+    synopsis = res[0].text.split(".")[0];
   } catch (error) {}
 
   return synopsis;
@@ -71,7 +72,7 @@ async function getCast(movieId) {
     params: { tconst: movieId },
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let cast = [];
@@ -92,16 +93,16 @@ async function getRating(movieId) {
     params: { tconst: movieId },
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let ratings = 0;
-  //   try {
-  //     let res = await axios.request(options);
-  //     ratings = res.data.rating;
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
+  try {
+    let res = await axios.request(options);
+    ratings = res.data.rating;
+  } catch (error) {
+    console.log(error);
+  }
   return ratings;
 }
 async function getMetaCritic(movieId) {
@@ -111,7 +112,7 @@ async function getMetaCritic(movieId) {
     params: { tconst: movieId },
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let metaCritic = 0;
@@ -131,19 +132,19 @@ async function getPlayback(videoId) {
     params: { viconst: videoId },
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let videoUrl = "";
   try {
     let res = await axios.request(options);
-    res.data.encodings.forEach((encodingObj) => {
+    res.data.resource.encodings.forEach((encodingObj) => {
       if (encodingObj.mimeType === "application/x-mpegurl") {
         videoUrl = encodingObj.playUrl;
       }
     });
   } catch (error) {
-    //console.log(error);
+    console.log(error);
   }
   return videoUrl;
 }
@@ -155,21 +156,16 @@ async function getVideoUrl(movieId) {
     params: { tconst: movieId },
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let video = null;
   try {
     let res = await axios.request(options);
-    res.data.resource.videos.forEach((videoObj) => {
-      if (videoObj.contentType === "Clip") {
-        video = getPlayback(videoObj.id.split("/")[2]);
-      }
-    });
+    video = res.data.resource.videos[0].id.split("/")[2];
   } catch (error) {
     console.log(error);
-    }
-    console.log(video)
+  }
   return video;
 }
 
@@ -180,7 +176,7 @@ async function getMovieDetails(movieId, genre) {
     params: { tconst: movieId },
     headers: {
       "x-rapidapi-host": "imdb8.p.rapidapi.com",
-      "x-rapidapi-key": "5047769fb4msh196706800ad01b4p1a92e6jsn07d749e9f20d",
+      "x-rapidapi-key": key,
     },
   };
   let movie = null;
@@ -203,8 +199,25 @@ async function getMovieDetails(movieId, genre) {
   return movie;
 }
 
+// getMovieDetails("tt0416449", "genre").then((res) => {
+//   console.log(res);
+// });
 
-getVideoUrl("tt0944947").then(console.log(response))
+/*{
+    description: 'Adventure',
+    endpoint: '/chart/popular/genre/adventure'
+  }, */
 
-//tt0944947
-//vi3877612057
+module.exports = [
+  getPopularGenres,
+  getCast,
+  getMetaCritic,
+  getMoviesByGenre,
+  getRating,
+  getPlayback,
+  getVideoUrl,
+  getMovieDetails,
+];
+
+//tt0416449
+//vi213123353
