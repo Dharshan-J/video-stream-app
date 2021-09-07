@@ -1,6 +1,10 @@
 
 .main-container {
+<<<<<<< HEAD
     background-image: url("../images/Skyfall.jpg");
+=======
+    background-image: url("../images/Dune.jpg");
+>>>>>>> bd8cbf07e84b16ac22d166697af436f82c847220
     height: 100vh; 
     width: 100vw;
     /* background-repeat: no-repeat; */
@@ -67,7 +71,11 @@ body{
 }
 .watch-btn-div button:hover{
   
+<<<<<<< HEAD
   box-shadow:0px 5px 3px rgb(167, 152, 152);
+=======
+  box-shadow:0px 5px 3px rgb(255, 255, 255);
+>>>>>>> bd8cbf07e84b16ac22d166697af436f82c847220
 }
 .cast-row
 {

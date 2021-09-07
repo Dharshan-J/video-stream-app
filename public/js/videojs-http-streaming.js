@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! @name @videojs/http-streaming @version 2.10.2 @license Apache-2.0 */
+=======
+*! @name @videojs/http-streaming @version 2.10.2 @license Apache-2.0 */
+>>>>>>> bd8cbf07e84b16ac22d166697af436f82c847220
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('global/document'), require('global/window'), require('video.js'), require('@xmldom/xmldom')) :
 	typeof define === 'function' && define.amd ? define(['exports', 'global/document', 'global/window', 'video.js', '@xmldom/xmldom'], factory) :
