@@ -1,15 +1,27 @@
-const wishlistBtnLove = document.querySelector(".wishlist-btn-love");
-const wishlistBtnLike = document.querySelector(".wishlist-btn-like");
+const wishlistBtnLove = document.querySelectorAll(".wishlist-btn-love");
+const wishlistBtnLike = document.querySelectorAll(".wishlist-btn-like");
+const movieCards = document.querySelectorAll(".movie-card");
 
-wishlistBtnLove.addEventListener("click", () => {
-    wishlistBtnLove.classList.toggle("d-none");
-    wishlistBtnLike.classList.toggle("d-none");
+for (let i = 0; i < wishlistBtnLove.length; i++) {
+    let btn = wishlistBtnLove[i];
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("d-none");
+        wishlistBtnLike[i].classList.toggle("d-none");
+      });
+
+}
+for (let i = 0; i < wishlistBtnLike.length; i++) {
+    let btn = wishlistBtnLike[i];
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("d-none");
+        wishlistBtnLove[i].classList.toggle("d-none");
+      });
+
+}
+
+movieCards.forEach(card => {
+  console.log(card.children)
+
+  //movie-name card.children[1].children[0].innerText
 })
-
-wishlistBtnLike.addEventListener("click", () => {
-    wishlistBtnLike.classList.toggle("d-none");
-    wishlistBtnLove.classList.toggle("d-none");
-})
-
-
 

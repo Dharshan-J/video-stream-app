@@ -1,100 +1,104 @@
-
 .main-container {
 <<<<<<< HEAD
     background-image: url("../images/Skyfall.jpg");
-=======
-    background-image: url("../images/Dune.jpg");
->>>>>>> bd8cbf07e84b16ac22d166697af436f82c847220
     height: 100vh; 
     width: 100vw;
     /* background-repeat: no-repeat; */
+=======
+  background-image: url("../images/Skyfall.jpg");
+  height: 100vh;
+  width: 100vw;
+  /* background-repeat: no-repeat; */
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
   /* background-size: auto */
-    background-size: cover; 
-    opacity: 0.89;
-    margin: 0px;
-  }
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-body{
+  background-size: cover;
+  opacity: 0.89;
+  margin: 0px;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+body {
   margin: 0px;
   color: white;
   font-family: "Ubuntu", sans-serif;
 }
-.main-container >div{
+.main-container > div {
   height: fit-content;
-
 }
-.movie-content{
+.movie-content {
   width: 40rem;
   padding: 2rem;
   background: transparent;
   /* margin-top: 10rem; */
 }
-.gen-time{
+.gen-time {
   margin-top: 5rem;
   font-size: 1rem;
 }
-.name-div{
+.name-div {
   font-size: 3.2rem;
   font-weight: bold;
 }
-.movieAbout-div{
+.movieAbout-div {
   font-size: 1.3rem;
 }
-.watch-btn-div button{
+.watch-btn-div button {
   margin-top: 2rem;
   background: transparent;
   border-color: whitesmoke;
   font-size: 1.5rem;
   border-radius: 20px;
   padding-left: 1.5rem;
-  padding-right:1.5rem ;
+  padding-right: 1.5rem;
   padding-top: 0.3rem;
   padding-bottom: 0.6rem;
   color: white;
   text-align: center;
 }
-.play-img{
+.play-img {
   margin-left: 1rem;
   width: 1.5rem;
   height: 1.5rem;
 }
-.genre-img{
+.genre-img {
   width: 1rem;
   height: 1rem;
 }
-.time-img{
+.time-img {
   margin-left: 1rem;
   width: 1rem;
   height: 1rem;
 }
-.watch-btn-div button:hover{
-  
 <<<<<<< HEAD
+.watch-btn-div button:hover{
   box-shadow:0px 5px 3px rgb(167, 152, 152);
-=======
   box-shadow:0px 5px 3px rgb(255, 255, 255);
->>>>>>> bd8cbf07e84b16ac22d166697af436f82c847220
+=======
+.watch-btn-div button:hover {
+  box-shadow: 0px 5px 3px rgb(255, 255, 255);
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 }
-.cast-row
-{
+.cast-row {
   margin: 2rem;
   margin-top: 7rem;
 }
-.row-cast-details
-{
+.row-cast-details {
   width: 40rem;
 }
-.row span{
+.row span {
   margin-top: -5rem;
   font-size: 1.2rem;
 }
+<<<<<<< HEAD
 .rating-col{
+  margin-left: 20rem; 
+=======
+.rating-col {
   margin-left: 20rem;
-  
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 }
-p.span-rating{
+p.span-rating {
   margin-top: -3rem;
   padding-top: 0.5rem;
   padding-left: 0.3rem;
@@ -102,13 +106,12 @@ p.span-rating{
   padding-bottom: 0.5rem;
   margin-bottom: -8px;
 }
-p.rating-num{
-  font-size:3.2rem;
+p.rating-num {
+  font-size: 3.2rem;
 }
-.row-cast-details p{
+.row-cast-details p {
   margin-bottom: -8px;
 }
-.second-col-div{
+.second-col-div {
   margin-top: -3rem;
 }
-
