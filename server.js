@@ -6,6 +6,10 @@ const signupRouter = require("./routes/signup-route");
 const loginRouter = require("./routes/login-route");
 const userHomeRouter = require("./routes/userHome-route");
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+const moviePageRouter = require("./routes/moviePage-route");
+>>>>>>> branchJD
 =======
 const moviePageRouter = require("./routes/moviePage-route");
 >>>>>>> branchJD
@@ -30,6 +34,10 @@ app.use("/signup", signupRouter);
 app.use("/login", loginRouter);
 app.use("/userHome",userHomeRouter)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+app.use("/moviePage",moviePageRouter);
+>>>>>>> branchJD
 =======
 app.use("/moviePage",moviePageRouter);
 >>>>>>> branchJD

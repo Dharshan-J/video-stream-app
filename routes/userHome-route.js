@@ -10,6 +10,10 @@ const [
   getVideoUrl,
   getMovieDetails,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  getMovieDetail,
+>>>>>>> branchJD
 =======
   getMovieDetail,
 >>>>>>> branchJD
@@ -18,6 +22,7 @@ const [
 const router = express.Router();
 
 router.get("/", fetchMovies, (req, res) => {
+<<<<<<< HEAD
 <<<<<<< HEAD
     console.log(res.movies)
   res.render("userHome.ejs", { movies: res.movies });
@@ -50,6 +55,8 @@ async function fetchMovies(req, res, next) {
   }
 
 =======
+=======
+>>>>>>> branchJD
   res.render("userHome.ejs", { movies: res.movies });
 });
 
@@ -87,6 +94,9 @@ async function fetchMovies(req, res, next) {
   await new Promise((resolve) => setTimeout(resolve, 5000));
   // console.log(movies);
   res.movies = movies;
+<<<<<<< HEAD
+>>>>>>> branchJD
+=======
 >>>>>>> branchJD
   next();
 }

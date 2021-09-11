@@ -2,8 +2,11 @@ const axios = require("axios");
 const Movie = require("../utils/movie-util");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const key = "8750407883mshb1ac941a807382fp153811jsnc07cb90e5e01";
 =======
+=======
+>>>>>>> branchJD
 const key = "a87110ff3amsha569ade2617f50ep1d531cjsn11ca1fd19aa5";
 
 async function getMovieDetail(movieId, genre) {
@@ -31,6 +34,9 @@ async function getMovieDetail(movieId, genre) {
 
   return movieObj;
 }
+<<<<<<< HEAD
+>>>>>>> branchJD
+=======
 >>>>>>> branchJD
 
 async function getPopularGenres() {
@@ -90,13 +96,19 @@ async function getSynopsis(movieId) {
   try {
     let res = await axios.request(options);
 <<<<<<< HEAD
+<<<<<<< HEAD
     synopsis = res[0].text.split(".")[0];
   } catch (error) {}
 =======
+=======
+>>>>>>> branchJD
     if (res.data[0].text) synopsis = res.data[0].text.split(".")[0];
   } catch (error) {
     console.log(error);
   }
+<<<<<<< HEAD
+>>>>>>> branchJD
+=======
 >>>>>>> branchJD
 
   return synopsis;
@@ -237,7 +249,11 @@ async function getMovieDetails(movieId, genre) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // getMovieDetails("tt0416449", "genre").then((res) => {
+=======
+// getSynopsis("tt0416449").then((res) => {
+>>>>>>> branchJD
 =======
 // getSynopsis("tt0416449").then((res) => {
 >>>>>>> branchJD
@@ -248,6 +264,7 @@ async function getMovieDetails(movieId, genre) {
     description: 'Adventure',
     endpoint: '/chart/popular/genre/adventure'
   }, */
+<<<<<<< HEAD
 
 module.exports = [
   getPopularGenres,
@@ -264,9 +281,25 @@ module.exports = [
 //tt0416449
 //vi213123353
 =======
+=======
+
+module.exports = [
+  getPopularGenres,
+  getCast,
+  getMetaCritic,
+  getMoviesByGenre,
+  getRating,
+  getPlayback,
+  getVideoUrl,
+  getMovieDetails,
+>>>>>>> branchJD
   getMovieDetail,
 ];
 
 //tt0416449
+<<<<<<< HEAD
+//vi213123353
+>>>>>>> branchJD
+=======
 //vi213123353
 >>>>>>> branchJD
