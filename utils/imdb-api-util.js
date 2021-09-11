@@ -1,7 +1,33 @@
 const axios = require("axios");
 const Movie = require("../utils/movie-util");
 
-const key = "8750407883mshb1ac941a807382fp153811jsnc07cb90e5e01";
+const key = "a87110ff3amsha569ade2617f50ep1d531cjsn11ca1fd19aa5";
+
+async function getMovieDetail(movieId, genre) {
+  let options = {
+    method: "GET",
+    url: "https://imdb8.p.rapidapi.com/title/get-details",
+    params: { tconst: movieId },
+    headers: {
+      "x-rapidapi-host": "imdb8.p.rapidapi.com",
+      "x-rapidapi-key": key,
+    },
+  };
+  let movieObj;
+  try {
+    let res = await axios.request(options);
+    movieObj = {
+      imageUrl: res.data.image.url,
+      title: res.data.title,
+      genre: genre,
+    
+    };
+  } catch (error) {
+    console.log(error);
+  }
+
+  return movieObj;
+}
 
 async function getPopularGenres() {
   let options = {
@@ -59,8 +85,10 @@ async function getSynopsis(movieId) {
   let synopsis = "";
   try {
     let res = await axios.request(options);
-    synopsis = res[0].text.split(".")[0];
-  } catch (error) {}
+    if (res.data[0].text) synopsis = res.data[0].text.split(".")[0];
+  } catch (error) {
+    console.log(error);
+  }
 
   return synopsis;
 }
@@ -199,7 +227,7 @@ async function getMovieDetails(movieId, genre) {
   return movie;
 }
 
-// getMovieDetails("tt0416449", "genre").then((res) => {
+// getSynopsis("tt0416449").then((res) => {
 //   console.log(res);
 // });
 
@@ -217,6 +245,7 @@ module.exports = [
   getPlayback,
   getVideoUrl,
   getMovieDetails,
+  getMovieDetail,
 ];
 
 //tt0416449
