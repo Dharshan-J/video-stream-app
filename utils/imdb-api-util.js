@@ -3,10 +3,13 @@ const Movie = require("../utils/movie-util");
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const key = "8750407883mshb1ac941a807382fp153811jsnc07cb90e5e01";
 =======
 =======
 >>>>>>> branchJD
+=======
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 const key = "a87110ff3amsha569ade2617f50ep1d531cjsn11ca1fd19aa5";
 
 async function getMovieDetail(movieId, genre) {
@@ -35,9 +38,12 @@ async function getMovieDetail(movieId, genre) {
   return movieObj;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> branchJD
 =======
 >>>>>>> branchJD
+=======
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 
 async function getPopularGenres() {
   let options = {
@@ -97,19 +103,25 @@ async function getSynopsis(movieId) {
     let res = await axios.request(options);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     synopsis = res[0].text.split(".")[0];
   } catch (error) {}
 =======
 =======
 >>>>>>> branchJD
+=======
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
     if (res.data[0].text) synopsis = res.data[0].text.split(".")[0];
   } catch (error) {
     console.log(error);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> branchJD
 =======
 >>>>>>> branchJD
+=======
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 
   return synopsis;
 }
@@ -250,6 +262,7 @@ async function getMovieDetails(movieId, genre) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // getMovieDetails("tt0416449", "genre").then((res) => {
 =======
 // getSynopsis("tt0416449").then((res) => {
@@ -257,6 +270,9 @@ async function getMovieDetails(movieId, genre) {
 =======
 // getSynopsis("tt0416449").then((res) => {
 >>>>>>> branchJD
+=======
+// getSynopsis("tt0416449").then((res) => {
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 //   console.log(res);
 // });
 
@@ -276,6 +292,10 @@ module.exports = [
   getVideoUrl,
   getMovieDetails,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  getMovieDetail,
+>>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 ];
 
 //tt0416449
