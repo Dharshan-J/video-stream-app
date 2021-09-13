@@ -5,14 +5,7 @@ const path = require("path");
 const signupRouter = require("./routes/signup-route");
 const loginRouter = require("./routes/login-route");
 const userHomeRouter = require("./routes/userHome-route");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 const moviePageRouter = require("./routes/moviePage-route");
->>>>>>> branchJD
-=======
-const moviePageRouter = require("./routes/moviePage-route");
->>>>>>> branchJD
 
 const app = express();
 const server = https.createServer(app);
@@ -32,15 +25,8 @@ app.use(function (req, res, next) {
 
 app.use("/signup", signupRouter);
 app.use("/login", loginRouter);
-app.use("/userHome",userHomeRouter)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-app.use("/moviePage",moviePageRouter);
->>>>>>> branchJD
-=======
-app.use("/moviePage",moviePageRouter);
->>>>>>> branchJD
+app.use("/userHome", userHomeRouter);
+app.use("/moviePage", moviePageRouter);
 
 app.get("/", (req, res) => {
   res.render("home.ejs", {});
@@ -49,8 +35,6 @@ app.get("/", (req, res) => {
 app.get("/home", (req, res) => {
   res.render("home.ejs", {});
 });
-
-
 
 app.get("/search", (req, res) => {
   res.render("search.ejs", {});
@@ -63,13 +47,13 @@ app.get("/contact", (req, res) => {
   res.render("contact.ejs", {});
 });
 
-app.get("/profile",(req,res)=>{
-  res.render("profile.ejs",{});
-})
+app.get("/profile", (req, res) => {
+  res.render("profile.ejs", {});
+});
 
-app.get("/videoPlayer",(req,res)=>{
-  res.render("videoPlayer.ejs",{});
-})
+app.get("/videoPlayer", (req, res) => {
+  res.render("videoPlayer.ejs", {});
+});
 
 app.get("/profile", (req, res) => {
   res.render("profile.ejs", {});
@@ -79,9 +63,6 @@ app.get("/videoPlayer", (req, res) => {
   res.render("videoPlayer.ejs", {});
 });
 
-app.get("/moviePage", (req, res) => {
-  res.render("moviePage.ejs", {});
-});
 app.listen(5000, () => {
   console.log("server running");
 });
