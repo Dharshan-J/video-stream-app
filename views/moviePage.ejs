@@ -18,10 +18,19 @@
       rel="stylesheet"
     />
 
-    <title>movie page</title>
+    <title><%= movie.name %></title>
   </head>
   <body>
-    <div class="main-container">
+    <div
+      class="main-container"
+      style="
+        background: url('<%-movie.posterUrl%>');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.89;
+        margin: 0px;
+      "
+    >
       <div class="movie-content">
         <div class="gen-time">
           <img
@@ -29,22 +38,19 @@
             src="../public/images/icons/video-camera.png"
             alt=""
           />
-          <p class="d-inline">movie genre</p>
+          <p class="d-inline"><%=movie.genre%></p>
           <img
             class="time-img"
             src="../public/images/icons/time-check.png"
             alt=""
           />
-          <p class="d-inline">time</p>
+          <p class="d-inline"><%=movie.runningTime%></p>
         </div>
         <div class="name-div">
-          <p>movie name</p>
+          <p><%=movie.name%></p>
         </div>
         <div class="movieAbout-div">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            dolorum velit, error ut eligendi aspernatur
-          </p>
+          <p><%=movie.synopsis%></p>
         </div>
 
         <div class="watch-btn-div">
@@ -64,21 +70,21 @@
 
           <div class="row row-cast-details">
             <div class="col py-3">
-              <p>director</p>
+              <p><%=movie.cast[0]%></p>
               <br />
-              <p>hero</p>
+              <p><%=movie.cast[1]%></p>
             </div>
 
             <div class="col py-3">
-              <p>musician</p>
+              <p><%=movie.cast[2]%></p>
               <br />
-              <p>producer</p>
+              <p><%=movie.cast[3]%></p>
             </div>
 
             <div class="col py-3">
-              <p>heroine</p>
+              <p><%=movie.cast[4]%></p>
               <br />
-              <p>side actor</p>
+              <p><%=movie.cast[5]%></p>
             </div>
           </div>
         </div>
@@ -86,11 +92,11 @@
           <div class="row row-rating">
             <div class="col rating-col py-0 px-3">
               <p class="span-rating">IMDB</p>
-              <p class="rating-num">8.0</p>
+              <p class="rating-num"><%=movie.imdbRating%></p>
             </div>
             <div class="col">
-              <p class="span-rating">METACITRIC</p>
-              <p class="rating-num">90%</p>
+              <p class="span-rating">METACRITIC</p>
+              <p class="rating-num"><%=movie.metaCritic%></p>
             </div>
           </div>
         </div>

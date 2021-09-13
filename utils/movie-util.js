@@ -53,6 +53,10 @@ class Movie {
     return this._videoUrl;
   }
 
+  get synopsis() {
+    return this._synopsis;
+  }
+
   set genre(genre) {
     this._genre = genre;
   }
@@ -83,6 +87,10 @@ class Movie {
 
   set videoUrl(url) {
     this._videoUrl = url;
+  }
+
+  set synopsis(synopsis) {
+    this._synopsis = synopsis;
   }
 }
 

@@ -1,16 +1,73 @@
 const axios = require("axios");
 const Movie = require("../utils/movie-util");
+const key = "4e8c0b9c0dmshd988cda3aa1b0d6p15a114jsnf780dfb5ac9c";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-const key = "8750407883mshb1ac941a807382fp153811jsnc07cb90e5e01";
-=======
-=======
->>>>>>> branchJD
-=======
->>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
-const key = "a87110ff3amsha569ade2617f50ep1d531cjsn11ca1fd19aa5";
+
+async function getGenre(movieId) {
+  let options = {
+    method: 'GET',
+    url: 'https://imdb8.p.rapidapi.com/title/get-genres',
+    params: {tconst: movieId},
+    headers: {
+      'x-rapidapi-host': 'imdb8.p.rapidapi.com',
+      'x-rapidapi-key': key
+    }
+  };
+  let genre = "";
+  try {
+    let res = await axios.request(options);
+    //console.log(res.data);
+    genre = res.data[0];
+  } catch (error) {
+    console.log(error);
+  }
+  return genre;
+}
+
+async function getBio(nameId) {
+  var options = {
+    method: 'GET',
+    url: 'https://imdb8.p.rapidapi.com/actors/get-bio',
+    params: {nconst: nameId},
+    headers: {
+      'x-rapidapi-host': 'imdb8.p.rapidapi.com',
+      'x-rapidapi-key': key
+    }
+  };
+  let name=""
+  try {
+    let res = await axios.request(options);
+    console.log(res.data.name);
+    name = res.data.name;
+  } catch (error) {
+    console.log(error);
+  }
+  return name;
+
+}
+
+async function getMovie(name) {
+  let  options = {
+    method: 'GET',
+    url: 'https://imdb8.p.rapidapi.com/title/find',
+    params: {q: name},
+    headers: {
+      'x-rapidapi-host': 'imdb8.p.rapidapi.com',
+      'x-rapidapi-key': key
+    }
+  };
+  let id;
+  try {
+    let res = await axios.request(options);
+    console.log(res.data.results[0].id.split("/")[2]);
+    id=res.data.results[0].id.split("/")[2]
+  } catch (error) {
+    console.log(error)
+  }
+  
+  return id;
+}
+
 
 async function getMovieDetail(movieId, genre) {
   let options = {
@@ -29,21 +86,13 @@ async function getMovieDetail(movieId, genre) {
       imageUrl: res.data.image.url,
       title: res.data.title,
       genre: genre,
-    
     };
   } catch (error) {
-    console.log(error);
+    console.log(error.config.data);
   }
 
   return movieObj;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branchJD
-=======
->>>>>>> branchJD
-=======
->>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 
 async function getPopularGenres() {
   let options = {
@@ -101,27 +150,12 @@ async function getSynopsis(movieId) {
   let synopsis = "";
   try {
     let res = await axios.request(options);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    synopsis = res[0].text.split(".")[0];
-  } catch (error) {}
-=======
-=======
->>>>>>> branchJD
-=======
->>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
+    // console.log(res.data)
+    synopsis = res.data[0].text.split(".")[0];
     if (res.data[0].text) synopsis = res.data[0].text.split(".")[0];
   } catch (error) {
     console.log(error);
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branchJD
-=======
->>>>>>> branchJD
-=======
->>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
 
   return synopsis;
 }
@@ -176,10 +210,16 @@ async function getMetaCritic(movieId) {
       "x-rapidapi-key": key,
     },
   };
-  let metaCritic = 0;
+  let metaCritic = null;
   try {
     let res = await axios.request(options);
-    metaCritic = res.data.metaCritic;
+    console.log(res.data)
+    metaCritic = {
+      score: res.data.metaScore,
+      time: res.data.title.runningTimeInMinutes,
+      imageUrl:res.data.title.image.url
+    } 
+    
   } catch (error) {
     console.log(error);
   }
@@ -260,27 +300,11 @@ async function getMovieDetails(movieId, genre) {
   return movie;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-// getMovieDetails("tt0416449", "genre").then((res) => {
-=======
-// getSynopsis("tt0416449").then((res) => {
->>>>>>> branchJD
-=======
-// getSynopsis("tt0416449").then((res) => {
->>>>>>> branchJD
-=======
-// getSynopsis("tt0416449").then((res) => {
->>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
+// getPopularGenres().then(res => {
 //   console.log(res);
-// });
+// })
 
-/*{
-    description: 'Adventure',
-    endpoint: '/chart/popular/genre/adventure'
-  }, */
-<<<<<<< HEAD
+
 
 module.exports = [
   getPopularGenres,
@@ -291,35 +315,9 @@ module.exports = [
   getPlayback,
   getVideoUrl,
   getMovieDetails,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   getMovieDetail,
->>>>>>> 34e22d4216b693033cfcbbfea03d85e9d66d0876
+  getBio,
+  getMovie,
+  getSynopsis,
+  getGenre
 ];
-
-//tt0416449
-//vi213123353
-=======
-=======
-
-module.exports = [
-  getPopularGenres,
-  getCast,
-  getMetaCritic,
-  getMoviesByGenre,
-  getRating,
-  getPlayback,
-  getVideoUrl,
-  getMovieDetails,
->>>>>>> branchJD
-  getMovieDetail,
-];
-
-//tt0416449
-<<<<<<< HEAD
-//vi213123353
->>>>>>> branchJD
-=======
-//vi213123353
->>>>>>> branchJD

@@ -143,4 +143,8 @@ body{
   background-image: url("../images/like.png");
 }
 
+.section-name{
+  color: white;
+  font-size: large;
+}
 

@@ -3,6 +3,15 @@ class User {
     this._name = name;
     this._mail = mail;
     this._password = password;
+    this._wishlist = [];
+  }
+
+  get wishlist() {
+    return this._wishlist;
+  }
+
+  set wishlist(list) {
+    this._wishlist = list;
   }
 
   get name() {
@@ -25,6 +34,10 @@ class User {
   }
   set password(password) {
     this._password = password;
+  }
+
+  addToWishList(movie) {
+    this._wishlist.push(movie);
   }
 }
 
