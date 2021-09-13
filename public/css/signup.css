@@ -83,3 +83,7 @@ body{
     border-bottom: 1px solid black;
 }
 
+.error{
+    border-color: rgb(255, 43, 43);
+}
+

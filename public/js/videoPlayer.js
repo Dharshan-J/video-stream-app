@@ -1,10 +1,10 @@
-$(document).ready(function () {
-  $("#btn").on("click", function () {
-    $("#video").html("<source src='" + $("#url").val() + "' type='application/x-mpegURL'>");
-    var ply = videojs("video");
-    ply.play();
-  });
-});
+// $(document).ready(function () {
+//   $("#btn").on("click", function () {
+//     $("#video").html("<source src='" + $("#url").val() + "' type='application/x-mpegURL'>");
+//     var ply = videojs("video");
+//     ply.play();
+//   });
+// });
 
 const player = videojs("my-video", {
   controls: true,
@@ -13,22 +13,19 @@ const player = videojs("my-video", {
   preferFullWindow: true,
   html5: {
     vhs: {
-      withCredentials: true,
+      withCredentials: false,
     },
   },
 });
 
 player.hotkeys({
   volumeStep: 0.1,
-    seekStep: 30,
-    enableModifiersForNumbers: false
+  seekStep: 30,
+  enableModifiersForNumbers: false,
 });
 
-player.src({
-      src: "http://sample.vodobox.com/skate_phantom_flex_4k/skate_phantom_flex_4k.m3u8",
-  type: "application/x-mpegURL",
-      withCredentials:false
-   
-})
-
-
+// player.src({
+//   src: <%-JSON.stringify(videoUrl)%>,
+//   type: "application/x-mpegURL",
+//   withCredentials: false,
+// });

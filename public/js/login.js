@@ -12,10 +12,14 @@ loginForm.addEventListener("submit", async (event) => {
 
     console.log(res);
 
-    if (res.status == 200) {
+    if (res.status === 200) {
       window.location.replace("http://localhost:5000/userHome");
     }
   } catch (error) {
     console.log(error);
+    password.value = "";
+    mail.value = "";
+    password.style.borderBottom = "1px solid red";
+    mail.style.borderBottom = "1px solid red";
   }
 });

@@ -9,6 +9,8 @@ router.get("/", fetchMovies, (req, res) => {
   res.render("userHome.ejs", { movies: res.movies });
 });
 
+//TODO:add wishlisted movie to DB
+
 async function fetchMovies(req, res, next) {
   const genres = ["Adventure", "Action", "Animation", "SciFi", "Horror"];
   const movies = [];

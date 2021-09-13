@@ -50,6 +50,7 @@
   overflow: hidden;
   transition-delay: 1s;
   transition: 0.4s ease-in;
+  cursor: pointer;
 }
 
 /* .card.col-md-4:hover {

@@ -6,6 +6,7 @@ const signupRouter = require("./routes/signup-route");
 const loginRouter = require("./routes/login-route");
 const userHomeRouter = require("./routes/userHome-route");
 const moviePageRouter = require("./routes/moviePage-route");
+const videoPlayerRouter = require("./routes/videoPlayer-route");
 
 const app = express();
 const server = https.createServer(app);
@@ -27,6 +28,7 @@ app.use("/signup", signupRouter);
 app.use("/login", loginRouter);
 app.use("/userHome", userHomeRouter);
 app.use("/moviePage", moviePageRouter);
+app.use("/videoPlayer", videoPlayerRouter);
 
 app.get("/", (req, res) => {
   res.render("home.ejs", {});
@@ -51,17 +53,12 @@ app.get("/profile", (req, res) => {
   res.render("profile.ejs", {});
 });
 
-app.get("/videoPlayer", (req, res) => {
-  res.render("videoPlayer.ejs", {});
-});
+
 
 app.get("/profile", (req, res) => {
   res.render("profile.ejs", {});
 });
 
-app.get("/videoPlayer", (req, res) => {
-  res.render("videoPlayer.ejs", {});
-});
 
 app.listen(5000, () => {
   console.log("server running");
