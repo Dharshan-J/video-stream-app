@@ -1,7 +1,5 @@
 :root {
   --light: 80;
-  /* the threshold at which colors are considered "light." Range: integers from 0 to 100,
-recommended 50 - 70 */
   --threshold: 60;
 }
 
@@ -19,8 +17,8 @@ recommended 50 - 70 */
 }
 body {
   margin: 0px;
-  --switch: calc((var(--light) - var(--threshold)) * -100%);
-  color: hsl(0, 0%, var(--switch));
+  /* --switch: calc((var(--light) - var(--threshold)) * -100%); */
+  color: white;
   font-family: "Ubuntu", sans-serif;
 }
 .main-container > div {
@@ -32,31 +30,33 @@ body {
   padding-right: 2rem;
   padding-bottom: 2rem;
   padding-top: 0.5rem;
+  height: 90vh;
   background: transparent;
   /* margin-top: 10rem; */
 }
 .gen-time {
-  margin-top: 5rem;
+  margin-top: 2rem;
   font-size: 1rem;
 }
 .name-div {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 .movieAbout-div {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .watch-btn-div button {
-  margin-top: 2rem;
+  margin-top: 1rem;
   background: transparent;
   border-color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 20px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.3rem;
   padding-bottom: 0.6rem;
   text-align: center;
+  color: white;
 }
 .play-img {
   margin-left: 1rem;

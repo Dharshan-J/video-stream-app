@@ -9,11 +9,11 @@
 const player = videojs("my-video", {
   controls: true,
   autoplay: false,
-  preload: "auto",
+  // preload: "auto",
   preferFullWindow: true,
   html5: {
     vhs: {
-      withCredentials: false,
+      withCredentials: true,
     },
   },
 });
